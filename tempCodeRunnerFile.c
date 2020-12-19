@@ -1,0 +1,6 @@
+void del(char n)
+// {
+
+
+
+// }
