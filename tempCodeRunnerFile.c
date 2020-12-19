@@ -1,6 +1,0 @@
-void del(char n)
-// {
-
-
-
-// }

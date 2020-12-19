@@ -30,7 +30,7 @@ test("prints help when no additional args are provided", () => {
 
 test("prints help", () => {
   let received = execSync(todoTxtCli("help")).toString("utf8");
-console.log(received);
+  
   expect(received).toEqual(expect.stringContaining(usage));
 });
 

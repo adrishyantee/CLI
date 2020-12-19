@@ -25,36 +25,13 @@ void add(char *thingToDo)
     pfile=NULL;
 }
 void help(){
-
-//         FILE *pfile = NULL;
-//     char *filename="help.txt";
-//     pfile=fopen(filename,"r");
-
-//     char str[MAXCHAR];
-//     fseek(pfile,0,SEEK_SET);
-//     while (fgets(str, MAXCHAR, pfile) != NULL)
-//     {
-//     printf("%s", str);
-//     }
-//     fclose(pfile);
-//     pfile=NULL; 
-// }
-// printf("Usage :-\n$ ./todo add \"todo item\"  # Add a new todo\n$ ./todo ls               # Show remaining todos\n$ ./todo del NUMBER       # Delete a todo\n$ ./todo done NUMBER      # Complete a todo\n$ ./todo help             # Show usage\n$ ./todo report           # Statistics");
-// }
-// char *s="Usage :-\n";
-// printf("%s",s);
-// printf("\");
-// putchar(10);
-
-// printf("Usage:-\n\r");
-// printf("$ ./todo add \"todo item\"  # Add a new todo\n\r");
-// printf("$ ./todo ls               # Show remaining todos\n\r");
-// printf("$ ./todo del NUMBER       # Delete a todo\n\r");
-// printf("$ ./todo done NUMBER      # Complete a todo\n\r");
-// printf("$ ./todo help             # Show usage\n\r");
-// printf("%-20s","$ ./todo report           # Statistics");
-char s[]="Usage :-\n$ ./todo add \"todo item\"  # Add a new todo\n$ ./todo ls               # Show remaining todos\n$ ./todo del NUMBER       # Delete a todo\n$ ./todo done NUMBER      # Complete a todo\n$ ./todo help             # Show usage\n$ ./todo report           # Statistics";
-printf("%s",s);
+printf("%s\n", "Usage :-");
+printf("%s\n", "$ ./todo add \"todo item\"  # Add a new todo");
+printf("%s\n", "$ ./todo ls               # Show remaining todos");
+printf("%s\n", "$ ./todo del NUMBER       # Delete a todo");
+printf("%s\n", "$ ./todo done NUMBER      # Complete a todo");
+printf("%s\n", "$ ./todo help             # Show usage");
+printf("%s\n", "$ ./todo report           # Statistics");
 }
 
 void ls(){
@@ -75,7 +52,7 @@ void ls(){
     
     while (fgets(str, MAXCHAR, pfile) != NULL)
     {
-    printf("[%d] %s\n\r",count, str);
+    printf("[%d] %s",count, str);
     count--;
     }
     fclose(pfile);
